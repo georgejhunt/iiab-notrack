@@ -1,0 +1,23 @@
+- name: Base Server Installed
+  command: echo Base Server Installed
+
+- name: Restart xsce-cmdsrv service
+  service: name=xsce-cmdsrv
+           state=restarted
+  when: not installing
+
+- name: Restart httpd
+  service: name={{ apache_service }}
+           state=restarted
+  when: not installing
+
+- name: Create hidden xsce-prepped file
+  file: dest=/.xsce-prepped
+        state=touch
+
+# If we got here we're done
+- name: Record base gui version
+  lineinfile: dest=/etc/xsce/xsce.env
+              regexp='^BASE_VERSION=*'
+              line='BASE_VERSION="{{ gui_version }}"'
+              state=present
