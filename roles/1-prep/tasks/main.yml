@@ -17,6 +17,8 @@
   tags:
     - download
 
+- include: prep.yml
+
 #TODO: Use regexp filter instead of hard-code ip 
 - name: Update chrony config file
   template: backup=no
@@ -73,7 +75,6 @@
            state=restarted
   when: udev_needs_patch and not installing
 
-- include: prep.yml
 
 # Put conditional actions for hardware platforms here
 ##  DISCOVER PLATFORMS ######

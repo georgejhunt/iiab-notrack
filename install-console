@@ -1,17 +1,23 @@
 #!/bin/bash
 
-# copy var files to /etc/xsce for subsequent use
+# if this is first run, /etc/xsce/config_vars.yml will not exist
+if [ ! -f /etc/xsce/config_vars.yml ];then
+   mkdir -p /etc/xsce
+   echo "{}" > /etc/xsce/config_vars.yml
+fi
 
-#./install-init
-
-# if not the first run, repo location is here
+# if this script is running from a non standard place, record in xsce.env
+CWD=$( dirname $( readlink -f $0 ) )
+if [ "$CWD" != "/opt/schoolserver/xsce" ] && [ ! -f /etc/xsce/xsce.env ];then
+   # we need a xcse.env to keep things straight
+   mkdir -p /etc/xsce
+   echo "XSCE_DIR=$CWD" >> /etc/xsce/xsce.env
+fi
 
 if [ -f /etc/xsce/xsce.env ]
 then
   . /etc/xsce/xsce.env
   cd $XSCE_DIR
-else
-  XSCE_DIR=/opt/schoolserver/xsce
 fi
 
 PLAYBOOK="xsce-base.yml"
