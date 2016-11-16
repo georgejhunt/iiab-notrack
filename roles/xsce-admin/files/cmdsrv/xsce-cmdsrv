@@ -910,7 +910,7 @@ def get_white_list(cmd_info):
         whlist = stream.read()
         stream.close()
     except IOError:
-        whlist = []
+        whlist = '[]\n'
 
     #resp = '{"xsce_whitelist": "' + whlist + '"}'
     resp = json_array("xsce_whitelist", whlist)
