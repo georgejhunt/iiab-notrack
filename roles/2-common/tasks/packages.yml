@@ -46,6 +46,7 @@
   with_items:
     - inetutils-syslogd
     - wpasupplicant
+    - curl
   when: ansible_distribution == "Debian"
   tags:
     - download

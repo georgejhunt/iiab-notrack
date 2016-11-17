@@ -14,3 +14,21 @@ systemctl_program: /bin/systemctl
 mysql_service: mysql
 apache_log: /var/log/apache2/access.log
 apache_log_dir: /var/log/apache2
+
+# the following are not yet deemed significant for debian version
+
+# 4-server-options
+authserver_install: False
+authserver_enabled: False
+# 5-xoservices
+xo_services_install: False
+ejabberd_install: False
+idmgr_install: False
+# 6-generic-aps
+# 7-edu-aps
+pathagar_install: False
+# 8-mgmat-tools
+sugar_stats_install: False
+ajenti_install: False
+monit_install: False
+xovis_install: False
