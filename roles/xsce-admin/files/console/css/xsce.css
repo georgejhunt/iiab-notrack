@@ -46,6 +46,19 @@ border: 1px solid transparent;
 border-radius: 8px 8px 0 0;
 }
 
+/* Configure styles */
+
+td {
+	text-align: center;
+}
+table {
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-collapse:collapse;
+	border:#CCC
+}
 /* Install Content styles */
 
 .modal.modal-wide .modal-dialog {

@@ -24,6 +24,7 @@
     - "{{ admin_console_path }}/help"
     - "{{ admin_console_path }}/js"
     - "{{ admin_console_path }}/htmlf"
+    - "{{ admin_console_path }}/images"
 
 - name: Copy admin-console css files
   copy: src={{ item }}

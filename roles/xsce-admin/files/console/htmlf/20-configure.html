@@ -44,6 +44,25 @@
 						<div class="radio">
 							<label><input type="radio" name="gui_desired_network_role" id="gui_desired_network_role-LanController" value="LanController">Lan Controller - You only need one network adapter. It is probably part of a standalone Network (LAN).</label>
 						</div>
+						<h3>Network Adapter Assignment</h3>
+						<table width="200" border="1" align="center">
+						  <tr>
+						    <th scope="col">&nbsp;</th>
+						    <th scope="col"><img src="images/globe.png" width="64" height="64" />Internet</th>
+						    <th scope="col"><img src="images/star.png" width="72" height="70" />LAN</th>
+						  </tr>
+						  <tr>
+						    <th scope="row"><img src="images/network-wired.png" width="48" height="48" /></th>
+						    <td><input type="checkbox" name="checkbox" id="checkbox" /></td>
+						    <td><input type="checkbox" name="checkbox2" id="checkbox2" /></td>
+						  </tr>
+						  <tr>
+						    <th scope="row"><img src="images/wifi.png" width="48" height="48" /></th>
+						    <td><input type="checkbox" name="checkbox3" id="checkbox3" /></td>
+						    <td><input type="checkbox" name="checkbox4" id="checkbox4" /></td>
+						  </tr>
+		</table>
+
 						<h2>Advanced Network Parameters</h2>
 						<h3>Network Discovered at Last Boot</h3>
 						<div id="discoveredNetwork">
