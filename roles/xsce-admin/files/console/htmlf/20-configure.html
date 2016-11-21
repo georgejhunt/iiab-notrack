@@ -48,18 +48,33 @@
 						<table width="200" border="1" align="center">
 						  <tr>
 						    <th scope="col">&nbsp;</th>
-						    <th scope="col"><img src="images/globe.png" width="64" height="64" />Internet</th>
+						    <th class="internet" scope="col"><img src="images/globe.png" width="64" height="64" />Internet</th>
+						    <th scope="col"><img src="images/star.png" width="72" height="70" />LAN</th>
 						    <th scope="col"><img src="images/star.png" width="72" height="70" />LAN</th>
 						  </tr>
-						  <tr>
+						  <tr class="adapter1">
 						    <th scope="row"><img src="images/network-wired.png" width="48" height="48" /></th>
-						    <td><input type="checkbox" name="checkbox" id="checkbox" /></td>
-						    <td><input type="checkbox" name="checkbox2" id="checkbox2" /></td>
+						    <td class="internet"><input type="checkbox" name="checkbox" id="adapter1_internet" /></td>
+						    <td class="lan"><input type="checkbox" name="checkbox2" id="adapter1_lan" /></td>
+						    <td class="appliance"><input type="checkbox" name="checkbox2" id="adapter1_appliance" /></td>
 						  </tr>
-						  <tr>
+						  <tr class="adapter2">
+						    <th scope="row"><img src="images/network-wired.png" width="48" height="48" /></th>
+						    <td class="internet"><input type="checkbox" name="checkbox" id="adapter2_internet" /></td>
+						    <td class="lan"><input type="checkbox" name="checkbox2" id="adapter2_lan" /></td>
+						    <td class="appliance"><input type="checkbox" name="checkbox2" id="adapter2_appliance" /></td>
+						  </tr>
+						  <tr class="wifi1">
 						    <th scope="row"><img src="images/wifi.png" width="48" height="48" /></th>
-						    <td><input type="checkbox" name="checkbox3" id="checkbox3" /></td>
-						    <td><input type="checkbox" name="checkbox4" id="checkbox4" /></td>
+						    <td class="internet"><input type="checkbox" name="checkbox3" id="wifi1_internet" /></td>
+						    <td class="lan"><input type="checkbox" name="checkbox4" id="wifi1_internet" /></td>
+						    <td class="appliance"><input type="checkbox" name="checkbox4" id="wifi1_appliance" /></td>
+						  </tr>
+						  <tr class="wifi2">
+						    <th scope="row"><img src="images/wifi.png" width="48" height="48" /></th>
+						    <td class="internet"><input type="checkbox" name="checkbox3" id="wifi2_internet" /></td>
+						    <td class="lan"><input type="checkbox" name="checkbox4" id="wifi2_internet" /></td>
+						    <td class="appliance"><input type="checkbox" name="checkbox4" id="wifi2_appliance" /></td>
 						  </tr>
 		</table>
 
