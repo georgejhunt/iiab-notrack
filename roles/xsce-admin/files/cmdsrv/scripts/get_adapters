@@ -1,0 +1,9 @@
+#!/bin/bash 
+# return the wired adapters on this machine
+
+LIST=`cat /proc/net/dev | cut -d: -f1 | grep -v -elo -etun -epackets -eInter| gawk '{print $1}'`
+printf "["
+for DEV in $LIST;do
+printf "%s," $DEV
+done
+printf "]\n"

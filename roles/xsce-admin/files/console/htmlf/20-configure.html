@@ -36,13 +36,13 @@
 						</div>
 						<h3>Server's Role in the Network</h3>
 						<div class="radio">
-							<label><input type="radio" name="gui_desired_network_role" id="gui_desired_network_role-Gateway" value="Gateway">Gateway - You need two or more network adapters, one of which must be connected to the Internet or a larger Network (WAN).</label>
+							<label><input type="radio" name="gui_desired_network_role" id="gui_desired_network_role-Gateway" value="Gateway" onchange="role_change() ">Gateway - You need two or more network adapters, one of which must be connected to the Internet or a larger Network (WAN).</label>
 						</div>
 						<div class="radio">
-							<label><input type="radio" name="gui_desired_network_role" id="gui_desired_network_role-Appliance" value="Appliance">Appliance - You only need one network adapter, which must be connected to the Internet or a larger Network (WAN).</label>
+							<label><input type="radio" name="gui_desired_network_role" id="gui_desired_network_role-Appliance" value="Appliance" onchange="role_change() ">Appliance - You only need one network adapter, which must be connected to the Internet or a larger Network (WAN).</label>
 						</div>
 						<div class="radio">
-							<label><input type="radio" name="gui_desired_network_role" id="gui_desired_network_role-LanController" value="LanController">Lan Controller - You only need one network adapter. It is probably part of a standalone Network (LAN).</label>
+							<label><input type="radio" name="gui_desired_network_role" id="gui_desired_network_role-LanController" value="LanController" onchange="role_change() ">Lan Controller - You only need one network adapter. It is probably part of a standalone Network (LAN).</label>
 						</div>
 						<h3>Network Adapter Assignment</h3>
 						<table width="200" border="1" align="center">

@@ -1,0 +1,6 @@
+#!/bin/bash -x
+# just copy the files that I am working on
+cp ./roles/xsce-admin/files/console/css/xsce.css /opt/schoolserver/admin_console/css
+cp ./roles/xsce-admin/files/console/htmlf/20-configure.html /opt/schoolserver/admin_console/htmlf
+cp ./roles/xsce-admin/files/console/js/admin_console.js /opt/schoolserver/admin_console/js/
+cp ./roles/xsce-admin/files/console/images/* /opt/schoolserver/admin_console/images
