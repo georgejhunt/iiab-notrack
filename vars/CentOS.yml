@@ -1,5 +1,6 @@
 is_debuntu: false
-is_debuntu: false
+is_debian: false
+is_ubuntu: false
 is_redhat: true
 is_centos: true
 dns_service: named
@@ -18,3 +19,5 @@ systemctl_program: /usr/bin/systemctl
 mysql_service: mariadb
 apache_log: /var/log/httpd/access_log
 sshd_service: sshd
+php_version: 5
+postgresql_version: 9.4
