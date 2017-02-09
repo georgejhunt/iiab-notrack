@@ -1,4 +1,8 @@
 is_debuntu: true
+is_ubuntu: false
+is_debian: true
+is_redhat: false
+is_fedora: false
 dns_service: bind9
 dns_user: bind
 proxy: squid3
@@ -18,3 +22,5 @@ apache_log: /var/log/apache2/access.log
 # which in turn cause netfilter-persistent to fail, which is essential
 cups_install: True
 sshd_service: ssh
+php_version: 5
+postgresql_version: 9.4

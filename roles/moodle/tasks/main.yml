@@ -15,11 +15,18 @@
   with_items:
     - python-psycopg2
     - php{{ php_version }}-pgsql
-    - php-curl
-    - php-zip
-    - php-gd
-    - php-mbstring
+    - php{{ php_version }}-curl
+    - php{{ php_version }}-gd
   when: is_debuntu
+  tags:
+    - download
+
+- name: Install moodle debian packages
+  package: name={{ item }}
+           state=present
+  with_items:
+    - php-mbstring
+  when: is_ubuntu
   tags:
     - download
 
